@@ -1,10 +1,10 @@
 create_file 'lib/templates/active_record/model/model.rb' do
-  path = File.expand_path('../rails_templates/templates/models/model.rb')
+  path = File.expand_path('../rails_template/templates/models/model.rb')
   File.open(path).read
 end
 
 insert_into_file 'config/application.rb', after: "config.assets.version = '1.0'" do
-  path = File.expand_path('../rails_templates/templates/config/application.rb')
+  path = File.expand_path('../rails_template/templates/config/application.rb')
   File.open(path).read
 end
 
